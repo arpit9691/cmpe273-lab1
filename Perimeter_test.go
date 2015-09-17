@@ -11,7 +11,7 @@ func Test_PerimeterCircle(t *testing.T) {
 
 	if s.Perimeter() < 26 {
 
-		t.Log("Fail")
+		t.Error("Fail")
 	} else {
 
 		t.Log("Pass")
@@ -29,7 +29,7 @@ func Test_PerimeterRectangle(t1 *testing.T) {
 
 	if s.Perimeter() != 18 {
 
-		t1.Log("Fail")
+		t1.Error("Fail")
 	} else {
 
 		t1.Log("Pass")
