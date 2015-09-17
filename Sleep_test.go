@@ -20,7 +20,7 @@ func Test_Sleep(t *testing.T) {
 		fmt.Println("Done")
 	} else {
 
-		t.Log("Fail")
+		t.Error("Fail")
 
 	}
 
