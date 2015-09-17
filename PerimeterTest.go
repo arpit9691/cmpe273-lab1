@@ -26,7 +26,7 @@ type Circle struct {
 	r float64
 }
 
-//the Square type also has an Area function and therefore, it too, implements the Shaper interface
+
 func (c Circle) Area() float64 {
 	return math.Pi * c.r * c.r
 }
