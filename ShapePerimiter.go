@@ -26,7 +26,7 @@ type Circle struct {
 	r float64
 }
 
-//the Square type also has an Area function and therefore, it too, implements the Shaper interface
+
 func (c Circle) Area() float64 {
 	return math.Pi * c.r * c.r
 }
@@ -40,7 +40,7 @@ func main() {
 	fmt.Println("Rectangle details are: ", r)
 
 	var s Shaper
-	s = r //equivalent to "s = Shaper(r)" since Go identifies r matches the Shaper interface
+	s = r 
 	fmt.Println("Area of Shaper(Rectangle): ", s.Area())
 	fmt.Println()
 
@@ -49,7 +49,7 @@ func main() {
 
 	c := Circle{r: 4}
 	fmt.Println("Circle details are: ", c)
-	s = c //equivalent to "s = Shaper(q)
+	s = c 
 	fmt.Println("Area of Shaper(Circle): ", s.Area())
 	fmt.Println()
 
